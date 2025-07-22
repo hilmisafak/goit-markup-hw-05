@@ -522,7 +522,7 @@
         </div>
       </section>
 
-      <div class="backdrop is-hidden" id="modal-backdrop">
+      <div class="backdrop is-hidden is-open" id="modal-backdrop">
         <div class="modal">
           <button type="button" class="modal-close" id="modal-close-btn">
             <svg class="icon">
@@ -570,9 +570,10 @@
             </label>
             <label class="modal-checkbox">
               <input type="checkbox" name="terms" required />
-              <span class="custom-checkbox"></span>
-              I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a>
+              <span class="custom-checkbox"
+                >I accept the terms and conditions of the
+                <a href="#">Privacy Policy</a></span
+              >
             </label>
             <button type="submit" class="btn">Send</button>
           </form>

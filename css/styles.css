@@ -62,6 +62,7 @@ ul {
 .icon {
   width: 16px;
   height: 16px;
+  fill: #000000;
 }
 
 .link {
