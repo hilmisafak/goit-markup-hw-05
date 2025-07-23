@@ -62,7 +62,6 @@ ul {
 .icon {
   width: 16px;
   height: 16px;
-  fill: #000000;
 }
 
 .link {
@@ -409,27 +408,40 @@ ul {
 
 .modal {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 40px 24px;
   width: 408px;
   border-radius: 4px;
   position: relative;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033;
 }
 
 .modal-close {
+  background-color: #e7e9fc;
+  border: 1px solid #0000001a;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  top: 8px;
-  right: 8px;
-  border: none;
-  background: transparent;
-  font-size: 24px;
+  top: 12px;
+  right: 12px;
   cursor: pointer;
-  color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close .icon {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
 }
 
 .modal-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.3px;
   margin-bottom: 24px;
 }
 
@@ -449,17 +461,27 @@ ul {
 
 .modal-form input,
 .modal-form textarea {
-  padding: 8px 12px;
-  border: 1px solid #8e8f99;
+  padding: 12px 16px;
+  border: 1px solid #2e2f4266;
   border-radius: 4px;
-  font-family: inherit;
-  font-size: 14px;
   outline: none;
+  width: 360px;
+  resize: none;
 }
 
 .modal-form input:focus,
 .modal-form textarea:focus {
-  border-color: #4d5ae5;
+  border-color: #404bbf;
+}
+
+.modal-form input:focus .icon {
+  fill: #404bbf;
+}
+
+.custom-checkbox {
+  font-size: 12px;
+  color: #757575;
+  letter-spacing: 0.5px;
 }
 
 .modal-checkbox {
@@ -467,6 +489,14 @@ ul {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.modal-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  accent-color: #4d5ae5;
+  cursor: pointer;
 }
 
 .modal-checkbox a {
@@ -477,7 +507,7 @@ ul {
 .modal .btn {
   align-self: center;
   width: 169px;
-  margin-top: 16px;
+  letter-spacing: 1px;
 }
 
 .input-wrapper {
@@ -494,7 +524,6 @@ ul {
   left: 12px;
   transform: translateY(-50%);
   pointer-events: none;
-  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
